@@ -9531,7 +9531,25 @@ p.nominalBounds = new cjs.Rectangle(0,0,150.1,354.7);
 // stage content:
 (lib.CrawlSpace_HTML5 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
+	var _this = this;
+		var sw = stage.width
+		var sh = stage.height
+		
+		_this.DanCS.x = sw/2;
+		_this.DanCS.y = sh/2.2;
+		
+		_this.crawlspace_join.x = sw*.87;
+		_this.crawlspace_join.y = sh*.87;
+		
+		_this.backbtn_cs.x = sw*.05;
+		_this.backbtn_cs.y = sh/2;
+		
+		_this.danspeaking.x = sw/2.4;
+		_this.danspeaking.y = sh*.82;
+		
+		_this.nextbutton_cs.x = sw*.91;
+		_this.nextbutton_cs.y = sh/2;
+	
 	// timeline functions:
 	this.frame_0 = function() {
 		this.backbtn_cs.addEventListener("click", fl_ClickToGoToWebPage);
@@ -9570,24 +9588,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,150.1,354.7);
 			this.PerryCS.gotoAndPlay("perrycsmove");
 		}
 		
-		var _this = this;
-		var iw = window.innerWidth
-		var ih = window.innerHeight
-		
-		_this.DanCS.x = iw/2;
-		_this.DanCS.y = ih/2.2;
-		
-		_this.crawlspace_join.x = iw*.87;
-		_this.crawlspace_join.y = ih*.87;
-		
-		_this.backbtn_cs.x = iw*.05;
-		_this.backbtn_cs.y = ih/2;
-		
-		_this.danspeaking.x = iw/2.4;
-		_this.danspeaking.y = ih*.82;
-		
-		_this.nextbutton_cs.x = iw*.91;
-		_this.nextbutton_cs.y = ih/2;
 	}
 
 	// actions tween:
