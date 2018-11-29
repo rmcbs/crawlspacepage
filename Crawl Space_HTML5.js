@@ -5177,7 +5177,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,0,0);
 
 	// Layer 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#D581B1").p("AD1AAInpAA");
+	this.shape.graphics.f().s("#D581B1").ss(2).p("AD1AAInpAA");
 	this.shape.setTransform(140.65,96);
 
 	this.instance = new lib.Path();
