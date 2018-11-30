@@ -10273,6 +10273,11 @@ p.nominalBounds = new cjs.Rectangle(0,-0.1,154.8,354.8);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.crawlspace_join},{t:this.backbtn_cs},{t:this.nextbutton_cs}]}).wait(1));
 
 	// Layer_3
+	this.HeidiCS = new lib.HeidiCS();
+	this.HeidiCS.name = "HeidiCS";
+	this.HeidiCS.parent = this;
+	this.HeidiCS.setTransform(159.15,351.6,1,1,0,0,0,49.4,112.6);
+
 	this.PerryCS = new lib.PerryCS();
 	this.PerryCS.name = "PerryCS";
 	this.PerryCS.parent = this;
@@ -10291,11 +10296,6 @@ p.nominalBounds = new cjs.Rectangle(0,-0.1,154.8,354.8);
 	this.instance = new lib.dancs17("synched",0);
 	this.instance.parent = this;
 	this.instance.setTransform(1513.3,754.65);
-
-	this.HeidiCS = new lib.HeidiCS();
-	this.HeidiCS.name = "HeidiCS";
-	this.HeidiCS.parent = this;
-	this.HeidiCS.setTransform(159.15,351.6,1,1,0,0,0,49.4,112.6);
 
 	this.SammyCS = new lib.SammyCS();
 	this.SammyCS.name = "SammyCS";
@@ -10331,7 +10331,7 @@ p.nominalBounds = new cjs.Rectangle(0,-0.1,154.8,354.8);
 	this.shape_46.graphics.lf(["#999999","#AFAFAF","#FFFFFF","#ACACAC","#999999","#CCCCCC"],[0,0.216,0.482,0.741,0.886,1],-132,0,132,0).s().p("A0nEPIAAodMApPAAAIAAIdg");
 	this.shape_46.setTransform(606.0657,89.1328,1,0.9806);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_46},{t:this.shape_45},{t:this.shape_44},{t:this.shape_43},{t:this.shape_42},{t:this.shape_41},{t:this.TammyCS},{t:this.SammyCS},{t:this.HeidiCS},{t:this.instance},{t:this.DanCS},{t:this.danspeaking},{t:this.PerryCS}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_46},{t:this.shape_45},{t:this.shape_44},{t:this.shape_43},{t:this.shape_42},{t:this.shape_41},{t:this.TammyCS},{t:this.SammyCS},{t:this.instance},{t:this.DanCS},{t:this.danspeaking},{t:this.PerryCS},{t:this.HeidiCS}]}).wait(1));
 
 	// BKG
 	this.shape_47 = new cjs.Shape();
